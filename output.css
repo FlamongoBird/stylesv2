@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Space+Mono:ital,wght@0,4000,7001,4001,700&display=swap");
+/* changes text box border on active */
+.ProseMirror-focused {
+  border: 2px solid #848a6f !important; }
+
+/* Edits Prose Mirror Editor */
+.ProseMirror-menubar {
+  background-color: #fffffc !important;
+  border: 1px solid #0077b6 !important;
+  border-bottom: none !important; }
+
+.ProseMirror-menubar svg {
+  color: #848a6f; }
+
 /* Important Mixins */
 /* Main Styling */
 body {
@@ -100,19 +113,6 @@ blockquote {
 .showMore, .media .content a {
   color: orange;
   text-decoration: underline; }
-
-/* changes text box border on active */
-.ProseMirror-focused {
-  border: 2px solid #848a6f !important; }
-
-/* Edits Prose Mirror Editor */
-.ProseMirror-menubar {
-  background-color: #fffffc !important;
-  border: 1px solid #0077b6 !important;
-  border-bottom: none !important; }
-
-.ProseMirror-menubar svg {
-  color: #848a6f; }
 
 /* notifs and stuff */
 #icon-notifications, #icon-messages {

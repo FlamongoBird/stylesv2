@@ -1,59 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Space+Mono:ital,wght@0,4000,7001,4001,700&display=swap')
-@import "prose-mirror"
-
-$header-font: "Martian Mono", sans-serif
-$main-font: "Space Mono", monospace
-
-$main-bg: #fffffc
-$secondary-bg: #e9eded
-
-$main-fg: #73899c
-$secondary-fg: #023e8a
-
-$accent1: #0077b6
-$accent2: #848a6f
-
-$usernames: #023e8a
-
-$polls-bg: #cad2c5
-$polls-fg: #84a98c
-    
-$icons: #316ba1
+@import "partials/prose-mirror"
+@import "partials/scheme"
+@import "partials/mixins"
 
 
-
-/* Important Mixins */
-
-@mixin header($color: red)
-    color: $color !important
-    font-family: $header-font
-
-@mixin dull()
-    color: grey
-
-@mixin links()
-    color: orange
-    text-decoration: underline
-
-@mixin badges($background: red, $foreground: green)
-    background: $background
-    color: $foreground !important
-
-@mixin your-pms()
-    background-color: #a2d2ff
-    border: none
-    
-@mixin button()
-    border: 1.5px solid $accent1 !important
-    background-color: inherit
-    color: $main-fg !important
-
-@mixin button-hover()
-    border: 1.5px solid $accent1 !important
-    background-color: $accent1 !important
-    color: white !important
-    transition: .5s
-    
 
 /* Main Styling */
 
@@ -173,25 +123,6 @@ blockquote
 /* changes color of show more link to links */
 .showMore, .media .content a
     @include links
-
-
-/* changes text box border on active */
-
-.ProseMirror-focused 
-    border: 2px solid $accent2 !important
-
-
-
-/* Edits Prose Mirror Editor */
-
-.ProseMirror-menubar 
-    background-color: $main-bg !important
-    border: 1px solid $accent1 !important
-    border-bottom: none !important
-
-.ProseMirror-menubar svg 
-    color: $accent2
-
 
 
 /* notifs and stuff */
