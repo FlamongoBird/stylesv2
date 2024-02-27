@@ -1,0 +1,26 @@
+@import "scheme"
+
+/* Wiki Styling */
+
+.wiki-content a 
+    @include links
+
+.wiki-content a:hover 
+    color: $accent2
+
+
+.wiki-content .fa 
+    color: $icons
+
+.wiki-content .label 
+    @include badges
+    color: white !important
+    border: none !important
+
+.wiki-menu-fixed li a 
+    @include dull
+
+.wiki-menu-fixed li a:hover 
+    background-color: $secondary-bg
+    color: $accent2
+

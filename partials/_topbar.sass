@@ -1,0 +1,78 @@
+@import "scheme"
+
+
+/* we do a lil trolling */
+.topbar-brand
+    a
+        display: none
+
+.topbar-brand:after
+    position: fixed
+    content: "Test"
+    font-size: 20px
+    top: 11px
+    left: 20px
+
+
+/* top bars */
+
+#account-top-menu
+    background: none
+
+#topbar-first
+    background-color: $main-bg
+
+#topbar-second
+    background-color: $main-bg
+    text-align: center !important
+
+
+.top-menu-item
+    a:hover
+        background-color: $secondary-bg !important
+        border-bottom: none !important
+    
+    .active
+        background-color: $secondary-bg !important
+    
+    border: none !important
+
+#top-menu-nav
+    border: none !important
+
+.no-space
+    border-bottom: none !important
+
+
+
+/* notifs and stuff */
+
+
+#icon-notifications, #icon-messages 
+    background-color: $main-bg !important
+
+
+#badge-messages, #badge-notifications 
+    background-color: $accent1
+
+#account-dropdown-link 
+    background-color: inherit !important
+    .user-title 
+        display: none
+
+
+#dropdown-notifications
+    .new
+        background-color: $secondary-bg
+        border-left-color: $accent1 !important
+    
+        .media-body
+            color: $main-fg !important
+        strong
+            color: $accent2 !important
+
+    .media-list
+        li
+            border-left-color: $accent2
+        li:hover
+            background-color: $secondary-bg

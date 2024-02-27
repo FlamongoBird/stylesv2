@@ -1,0 +1,43 @@
+@import "scheme"
+
+/* PMS */
+
+.conversation-entry-content 
+    background-color: $secondary-bg
+    border: 1px solid
+
+.conversation-entry-content.own 
+    @include your-pms
+
+
+.panel-heading 
+    background-color: $secondary-bg !important
+    color: $main-fg !important
+
+.panel-heading a 
+    color: inherit
+
+#inbox li 
+    border-left-color: $accent2
+
+#inbox .selected 
+    border-left-color: $accent1
+
+.inbox-wrapper hr 
+    border-top-color: $accent2
+
+
+.media-body h5 small a 
+    color: $accent2 !important
+
+
+.media-body 
+    color: $main-fg
+
+
+.messagePreviewEntry 
+    border-left-color: $accent2 !important
+
+.messagePreviewEntry:hover 
+    border-left-color: $accent1 !important
+
